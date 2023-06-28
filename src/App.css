@@ -2,37 +2,85 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-content {
+  background-color: rgb(5, 126, 126);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-content p {
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.option-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.sep {
+  margin-left: 5px;
+  margin-right: 5px;
+} 
+
+.option-btn {
+  color: blue;
+}
+
+.option-btn:hover {
+  cursor: pointer;
+  color: rgb(115, 115, 241);
+}
+
+.edit-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.edit-bg {
+  background-color: rgba(0, 0, 0, 0.788);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.edit-content {
+  position: relative;
+
+}
+
+.edit-container form {
+  height: 100px;
+  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+}
+
+
+.edit-header {
   color: white;
+  font-size: 22px;
+  font-weight: bold;
+  /* background-color: aqua; */
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-container input {
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-container button {
+  margin-top: 10px;
 }
